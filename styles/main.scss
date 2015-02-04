@@ -1,0 +1,99 @@
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+
+$max-width: 550px;
+
+$font-family: $lucida-grande;
+$primary-color: #006c73;
+$secondary-color: #960597;
+$highlightblue-color: #01005c;
+$highlightred-color: #7a1c00;
+$highlightgreen-color: #09730e;
+
+body {
+  margin: 0 auto;
+  font-size: 1.2 em;
+}
+
+h1 {
+  margin: 0;
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  text-align: center;
+  color: $primary-color;
+}
+
+.container {
+  @include outer-container;
+  height: 600px;
+}
+
+.box {
+  @include span-columns(12);
+}
+
+.chat-room {
+  margin: 0 auto;
+  border-top: 10px solid $secondary-color;
+  border-right: 10px solid $highlightred-color;
+  border-bottom: 10px solid $highlightblue-color;
+  border-left: 10px solid $highlightgreen-color;
+  border-radius: 20px;
+  background: #fff;
+  padding-left: 10px;
+  height: 600px;
+}
+
+.username-box,
+.message-box {
+  display: block;
+  margin: 10px 0 10px 10px;
+/*   border: 2px solid \$secondary-color; */
+  border-radius: 5px;
+  background: tint($secondary-color, 70%);
+  line-height: 1.5em;
+  color: $secondary-color;
+}
+
+
+.username-box[placeholder],
+.message-box[placeholder] {
+  display: inline-block;
+  padding-left: 10px;
+  color: $primary-color;
+  font-size: 1.2em;
+}
+
+.username-box[placeholder]::-webkit-input-placeholder {
+  color: tint($primary-color, 40%);
+}
+
+.username-box[placeholder]:-moz-placeholder { /* Firefox 18- */
+  color: tint($primary-color, 40%);
+}
+
+.username-box[placeholder]::-moz-placeholder {  /* Firefox 19+ */
+  color: tint($primary-color, 40%);
+}
+
+.username-box[placeholder]:-ms-input-placeholder {
+  color: tint($primary-color, 40%);
+}
+
+.message-box[placeholder]::-webkit-input-placeholder {
+  color: tint($primary-color, 40%);
+}
+
+.message-box[placeholder]:-moz-placeholder { /* Firefox 18- */
+  color: tint($primary-color, 40%);
+}
+
+.message-box[placeholder]::-moz-placeholder {  /* Firefox 19+ */
+  color: tint($primary-color, 40%);
+}
+
+.message-box[placeholder]:-ms-input-placeholder {
+  color: tint($primary-color, 40%);
+}

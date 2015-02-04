@@ -1,0 +1,98 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+body {
+  margin: 0 auto;
+  font-size: 1.2 em; }
+
+h1 {
+  margin: 0;
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  text-align: center;
+  color: #006c73; }
+
+.container {
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 600px; }
+  .container::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.box {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .box:last-child {
+    margin-right: 0; }
+
+.chat-room {
+  margin: 0 auto;
+  border-top: 10px solid #960597;
+  border-right: 10px solid #7a1c00;
+  border-bottom: 10px solid #01005c;
+  border-left: 10px solid #09730e;
+  border-radius: 20px;
+  background: #fff;
+  padding-left: 10px;
+  height: 600px; }
+
+.username-box,
+.message-box {
+  display: block;
+  margin: 10px 0 10px 10px;
+  /*   border: 2px solid \$secondary-color; */
+  border-radius: 5px;
+  background: #dfb4df;
+  line-height: 1.5em;
+  color: #960597; }
+
+.username-box[placeholder],
+.message-box[placeholder] {
+  display: inline-block;
+  padding-left: 10px;
+  color: #006c73;
+  font-size: 1.2em; }
+
+.username-box[placeholder]::-webkit-input-placeholder {
+  color: #66a6ab; }
+
+.username-box[placeholder]:-moz-placeholder {
+  /* Firefox 18- */
+  color: #66a6ab; }
+
+.username-box[placeholder]::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #66a6ab; }
+
+.username-box[placeholder]:-ms-input-placeholder {
+  color: #66a6ab; }
+
+.message-box[placeholder]::-webkit-input-placeholder {
+  color: #66a6ab; }
+
+.message-box[placeholder]:-moz-placeholder {
+  /* Firefox 18- */
+  color: #66a6ab; }
+
+.message-box[placeholder]::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #66a6ab; }
+
+.message-box[placeholder]:-ms-input-placeholder {
+  color: #66a6ab; }
+
+/*# sourceMappingURL=main.css.map */
