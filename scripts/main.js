@@ -85,5 +85,6 @@
 // Updates chat room every 5 seconds
     setInterval(update, 5000);
 
+
   });
 })();
