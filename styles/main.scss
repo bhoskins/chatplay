@@ -1,7 +1,7 @@
 @import 'bourbon/bourbon';
 @import 'neat/neat';
 
-$max-width: 550px;
+$max-width: 960px;
 
 $font-family: $lucida-grande;
 $primary-color: #006c73;
@@ -44,21 +44,46 @@ h1 {
   background: #fff;
   padding-left: 10px;
   height: 600px;
-
   overflow-y: scroll;
 }
 
+.input-wrap {
+  display: block;
+  border: 1px solid red;
+}
+
 .username-box,
-.message-box {
+.message-box,
+.submit-btn {
   display: block;
   margin: 10px 0 10px 10px;
-/*   border: 2px solid \$secondary-color; */
   border-radius: 5px;
   background: tint($secondary-color, 70%);
   line-height: 1.5em;
   color: $secondary-color;
 }
 
+.username-box {
+  width: 50%;
+}
+
+.message-box {
+  width: 98%;
+}
+
+.submit-btn {
+  display: block;
+  width: 25%;
+  height: 38px;
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 1.5em;
+  background: tint($primary-color, 70%);
+}
+
+.submit-btn:hover {
+  background: $highlightblue-color;
+}
 
 .username-box[placeholder],
 .message-box[placeholder] {
@@ -103,7 +128,6 @@ h1 {
 .message-li {
   display: block;
   width: 100%;
-  //height: 50px;
   border-bottom: 1px solid blue;
 }
 
@@ -129,7 +153,9 @@ h1 {
 }
 
 .message-wrap {
-  width: 60%;
+  width: 100%;
   vertical-align: top;
 }
+
+
 

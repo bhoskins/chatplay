@@ -22,7 +22,7 @@ h1 {
   color: #006c73; }
 
 .container {
-  max-width: 550px;
+  max-width: 960px;
   margin-left: auto;
   margin-right: auto;
   height: 600px; }
@@ -51,15 +51,37 @@ h1 {
   height: 600px;
   overflow-y: scroll; }
 
+.input-wrap {
+  display: block;
+  border: 1px solid red; }
+
 .username-box,
-.message-box {
+.message-box,
+.submit-btn {
   display: block;
   margin: 10px 0 10px 10px;
-  /*   border: 2px solid \$secondary-color; */
   border-radius: 5px;
   background: #dfb4df;
   line-height: 1.5em;
   color: #960597; }
+
+.username-box {
+  width: 50%; }
+
+.message-box {
+  width: 98%; }
+
+.submit-btn {
+  display: block;
+  width: 25%;
+  height: 38px;
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 1.5em;
+  background: #b2d2d5; }
+
+.submit-btn:hover {
+  background: #01005c; }
 
 .username-box[placeholder],
 .message-box[placeholder] {
@@ -119,7 +141,7 @@ h1 {
   color: blue; }
 
 .message-wrap {
-  width: 60%;
+  width: 100%;
   vertical-align: top; }
 
 /*# sourceMappingURL=main.css.map */
