@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles/main.css">
+  <title>Chat Play</title>
+</head>
+<body>
+
+  <div class="container">
+
+    <h1 class="box">Chat in the Hat</h1>
+
+    <ul class="chat-room box">
+
+    </ul>
+
+    <div class="input-wrap box">
+      <input type="text" class="username-box"
+        placeholder="Name" size="25" autofocus>
+      <input type="text" class="message-box"
+        placeholder="Message" size="50">
+      <button type="submit" class="submit-btn"
+        value="Submit">Send
+      </button>
+    </div> <!-- .input-wrap box -->
+
+  </div><!-- .container -->
+
+
+
+
+
+<script type="text/template" data-template-name="message-box">
+  <li class="message-li">
+
+    <div class="username-wrap text chatroom">
+      <span class="username-span">
+        <%= username %>
+      </span>
+      <span class="createdAt-span">
+        <%= createdAt %>
+      </span>
+
+    </div>
+
+  <div class="message-wrap text chatroom">
+    <%= message %>
+  </div>
+
+  </li>
+
+</script>
+
+
+<script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="bower_components/underscore/underscore.js"></script>
+<script type="text/javascript" src="bower_components/moment/moment.js"></script>
+
+<script type="text/javascript" src="scripts/main.js"></script>
+
+</body>
+</html>
